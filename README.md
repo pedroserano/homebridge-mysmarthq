@@ -1,4 +1,4 @@
-# homebridge-smarthq
+# homebridge-mysmarthq
 
 A Homebridge plugin for **GE Home Appliances (SmartHQ)** that exposes your WiFi-connected GE appliances to Apple HomeKit via the [SmartHQ](https://www.geappliances.com/connect) cloud API.
 
@@ -31,10 +31,10 @@ A Homebridge plugin for **GE Home Appliances (SmartHQ)** that exposes your WiFi-
 ## Installation
 
 ```bash
-npm install -g homebridge-smarthq
+npm install -g homebridge-mysmarthq
 ```
 
-Or via Homebridge UI → Plugins → search `homebridge-smarthq`.
+Or via Homebridge UI → Plugins → search `homebridge-mysmarthq`.
 
 ---
 
@@ -125,8 +125,8 @@ Tokens are refreshed automatically before expiry. The WebSocket reconnects with 
 ## Building from Source
 
 ```bash
-git clone https://github.com/you/homebridge-smarthq
-cd homebridge-smarthq
+git clone https://github.com/you/homebridge-mysmarthq
+cd homebridge-mysmarthq
 npm install
 npm run build       # compiles TypeScript → dist/
 npm run watch       # watch mode for development
