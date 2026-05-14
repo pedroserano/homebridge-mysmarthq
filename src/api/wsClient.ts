@@ -200,7 +200,7 @@ export class SmartHQClient extends EventEmitter {
         const update: ErdUpdate = {
           applianceId,
           erd:   erd.toLowerCase(),
-          value: (value ?? '').toLowerCase(),
+          value: String(value ?? '').toLowerCase(),
         };
         if (!this.state.has(applianceId)) this.state.set(applianceId, new Map());
         this.state.get(applianceId)!.set(update.erd, update.value);

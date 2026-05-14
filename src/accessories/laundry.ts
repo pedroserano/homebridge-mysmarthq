@@ -31,7 +31,7 @@ const IDLE_STATES = new Set<string>([
 export class LaundryAccessory extends BaseAccessory {
   private cycleService!: Service;
   private doorService!: Service;
-  private lockService!: Service | null = null;
+  private lockService: Service | null = null;
   private readonly isWasher: boolean;
 
   constructor(

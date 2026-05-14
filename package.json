@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-smarthq",
+  "name": "homebridge-mysmarthq",
   "version": "1.0.0",
   "description": "Homebridge plugin for GE Home Appliances (SmartHQ) — Fridge, Oven, Dishwasher, Laundry, A/C, and more",
   "main": "dist/index.js",

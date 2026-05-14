@@ -51,8 +51,8 @@ function isOvenActive(stateHex: string): boolean {
 export class OvenAccessory extends BaseAccessory {
   private upperTempService!: Service;
   private upperSwitchService!: Service;
-  private lowerTempService!: Service | null = null;
-  private lowerSwitchService!: Service | null = null;
+  private lowerTempService: Service | null = null;
+  private lowerSwitchService: Service | null = null;
   private hasLowerOven = false;
 
   constructor(
