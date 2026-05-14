@@ -1,0 +1,31 @@
+{
+  "name": "homebridge-smarthq",
+  "version": "1.0.0",
+  "description": "Homebridge plugin for GE Home Appliances (SmartHQ) — Fridge, Oven, Dishwasher, Laundry, A/C, and more",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["homebridge-plugin", "smarthq", "ge-appliances", "ge-home", "homebridge"],
+  "author": "homebridge-smarthq contributors",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "homebridge": ">=1.6.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.10",
+    "homebridge": "^1.8.0",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "homebridge": ">=1.6.0"
+  }
+}

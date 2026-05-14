@@ -1,0 +1,55 @@
+{
+  "pluginAlias": "SmartHQ",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "SmartHQ"
+      },
+      "username": {
+        "title": "SmartHQ Username (Email)",
+        "type": "string",
+        "required": true,
+        "format": "email"
+      },
+      "password": {
+        "title": "SmartHQ Password",
+        "type": "string",
+        "required": true
+      },
+      "region": {
+        "title": "Region",
+        "type": "string",
+        "default": "US",
+        "oneOf": [
+          { "title": "United States", "enum": ["US"] },
+          { "title": "Europe", "enum": ["EU"] }
+        ]
+      },
+      "refreshInterval": {
+        "title": "State Refresh Interval (seconds)",
+        "type": "integer",
+        "default": 30,
+        "minimum": 10,
+        "maximum": 300
+      },
+      "debug": {
+        "title": "Debug Logging",
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "layout": [
+    "name",
+    "username",
+    "password",
+    "region",
+    "refreshInterval",
+    "debug"
+  ]
+}
